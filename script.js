@@ -1,10 +1,13 @@
-window.onloadfunction = function () {
-    let titleElement = document.getElementById("title");
+window.onload = function () {
 
-    if(titleElement) {
-        console.log("Element found:", titleElement);
-        titleElement.textContent = "JavaScript is working!";
-    } else {
-        console.error("Element with id 'title' not found.");
-    }
+    let titleElement = document.querySelector("#title");
+    let item1 = document.querySelector("#item1");
+    let item2 = document.querySelector("#item2");
+    let item3 = document.querySelector("#item3");
+
+    console.log("Title Element:", titleElement);
+    console.log("Item 1:", item1);
+    console.log("Item 2:", item2);
+    console.log("Item 3:", item3);
+
 };
