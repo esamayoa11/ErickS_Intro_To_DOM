@@ -1,13 +1,12 @@
 window.onload = function () {
 
-    let titleElement = document.querySelector("#title");
-    let item1 = document.querySelector("#item1");
-    let item2 = document.querySelector("#item2");
-    let item3 = document.querySelector("#item3");
+    let descriptionElements = document.querySelectorAll(".description");
 
-    console.log("Title Element:", titleElement);
-    console.log("Item 1:", item1);
-    console.log("Item 2:", item2);
-    console.log("Item 3:", item3);
+    descriptionElements.forEach(function(description, index) {
+        console.log('Description ${index + 1}:', description);
+    });
 
+    descriptionElements.forEach(function(description) {
+        description.innerText = "This text has been changed!";
+    })
 };
